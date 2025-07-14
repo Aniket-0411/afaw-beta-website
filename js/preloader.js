@@ -6,5 +6,5 @@ document.addEventListener('DOMContentLoaded', function() {
         if (preloader) preloader.style.display = 'none';
         const mainContent = document.getElementById('main-content');
         if (mainContent) mainContent.style.display = 'block';
-    }, 2000);
+    }, 500);
 });

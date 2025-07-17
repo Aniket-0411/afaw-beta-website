@@ -81,3 +81,24 @@
     
 })(jQuery);
 
+
+  $(document).ready(function () {
+    var owl = $('.testimonial-carousel');
+
+    owl.owlCarousel({
+      items: 3,
+      loop: true,
+      margin: 30,
+      nav: false,
+      dots: false,
+      autoplay: false, // disable Owl's native autoplay
+      smartSpeed: 600
+    });
+
+    // Simulate 'next' click every 0.5 seconds
+    setInterval(function () {
+      owl.trigger('next.owl.carousel');
+    }, 2000);
+  });
+
+

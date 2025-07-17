@@ -3,10 +3,36 @@
 
 <head>
     <meta charset="utf-8">
-    <title>ChariTeam - Free Nonprofit Website Template</title>
-    <meta content="width=device-width, initial-scale=1.0" name="viewport">
-    <meta content="" name="keywords">
-    <meta content="" name="description">
+    <title>Africa Access Water (AfAW) | Empowering Africa Through Solar-Powered Water</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- SEO Meta Tags -->
+    <meta name="keywords"
+        content="Africa Access Water, Solar-Powered Water, Nonprofit, Rural Development, Water Infrastructure, Zambia, Food Security, Climate Resilience, Women Empowerment, Sustainable Agriculture">
+    <meta name="description"
+        content="Africa Access Water (AfAW) is a nonprofit organization empowering rural African communities through sustainable solar-powered water infrastructure, food security, and socio-economic development.">
+
+    <!-- Open Graph Meta Tags -->
+    <meta property="og:title" content="Africa Access Water | Empowering Africa Through Solar-Powered Water">
+    <meta property="og:description"
+        content="Providing solar-powered water systems to improve livelihoods and reduce poverty in rural African communities.">
+    <meta property="og:image" content="https://beta.africaaccesswater.org/img/og-image.jpg">
+
+    <!-- Update this with actual image path -->
+    <meta property="og:url" content="https://beta.africaaccesswater.org/">
+    <meta property="og:type" content="website">
+    <meta property="og:site_name" content="Africa Access Water">
+
+    <!-- Twitter Card Meta Tags -->
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="Africa Access Water | Empowering Africa Through Solar-Powered Water">
+    <meta name="twitter:description"
+        content="Join us in transforming African communities through clean water access and climate-resilient agriculture.">
+    <meta name="twitter:image" content="https://beta.africaaccesswater.org/img/og-image.jpg">
+    <!-- Same image as OG or specific Twitter card -->
+
+    <!-- Optional: Theme color for browser UI -->
+    <meta name="theme-color" content="#2D9CDB">
 
     <!-- Favicon -->
     <link href="img/favicon.ico" rel="icon">
@@ -14,7 +40,9 @@
     <!-- Google Web Fonts -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=Saira:wght@500;600;700&display=swap" rel="stylesheet"> 
+    <link
+        href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=Saira:wght@500;600;700&display=swap"
+        rel="stylesheet">
 
     <!-- Icon Font Stylesheet -->
     <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.10.0/css/all.min.css" rel="stylesheet">
@@ -32,55 +60,66 @@
 </head>
 
 <body>
-    <!-- Spinner Start -->
-    <div id="spinner" class="show bg-white position-fixed translate-middle w-100 vh-100 top-50 start-50 d-flex align-items-center justify-content-center">
-        <div class="spinner-grow text-primary" role="status"></div>
+    <!-- Preloader -->
+    <div class="preloader" id="preloader">
+        <div class="loader">
+            <div class="loader-outter"></div>
+            <div class="loader-inner"></div>
+
+            <div class="indicator">
+                <img src="img/afaw-logo-africa.png" width="40px" alt="#">
+            </div>
+        </div>
     </div>
-    <!-- Spinner End -->
+    <!-- End Preloader -->
 
 
     <!-- Navbar Start -->
     <div class="container-fluid fixed-top px-0 wow fadeIn" data-wow-delay="0.1s">
+        <!-- Top Bar -->
         <div class="top-bar text-white-50 row gx-0 align-items-center d-none d-lg-flex">
             <div class="col-lg-6 px-5 text-start">
-                <small><i class="fa fa-map-marker-alt me-2"></i>123 Street, New York, USA</small>
-                <small class="ms-4"><i class="fa fa-envelope me-2"></i>info@example.com</small>
+                <small><i class="fa fa-map-marker-alt me-2"></i>Lot 5676/M/6, Lusaka West, Lusaka, Zambia</small>
+                <small class="ms-4"><i class="fa fa-envelope me-2"></i>info@africaaccesswater.org</small>
             </div>
             <div class="col-lg-6 px-5 text-end">
                 <small>Follow us:</small>
-                <a class="text-white-50 ms-3" href=""><i class="fab fa-facebook-f"></i></a>
-                <a class="text-white-50 ms-3" href=""><i class="fab fa-twitter"></i></a>
-                <a class="text-white-50 ms-3" href=""><i class="fab fa-linkedin-in"></i></a>
-                <a class="text-white-50 ms-3" href=""><i class="fab fa-instagram"></i></a>
+                <a class="text-white-50 ms-3" href="#"><i class="fab fa-facebook-f"></i></a>
+                <a class="text-white-50 ms-3" href="#"><i class="fab fa-twitter"></i></a>
+                <a class="text-white-50 ms-3" href="#"><i class="fab fa-linkedin-in"></i></a>
+                <a class="text-white-50 ms-3" href="#"><i class="fab fa-instagram"></i></a>
             </div>
         </div>
 
+        <!-- Main Navbar -->
         <nav class="navbar navbar-expand-lg navbar-dark py-lg-0 px-lg-5 wow fadeIn" data-wow-delay="0.1s">
             <a href="index.html" class="navbar-brand ms-4 ms-lg-0">
-                <h1 class="fw-bold text-primary m-0">Chari<span class="text-white">Team</span></h1>
+                <img src="img/logos/afaw-logo-africa.png" alt="afaw-logo-africa" class="img-fluid"
+                    style="width: 50px; height: 50px;">
             </a>
-            <button type="button" class="navbar-toggler me-4" data-bs-toggle="collapse" data-bs-target="#navbarCollapse">
+            <button type="button" class="navbar-toggler me-4" data-bs-toggle="collapse"
+                data-bs-target="#navbarCollapse">
                 <span class="navbar-toggler-icon"></span>
             </button>
             <div class="collapse navbar-collapse" id="navbarCollapse">
                 <div class="navbar-nav ms-auto p-4 p-lg-0">
                     <a href="index.html" class="nav-item nav-link">Home</a>
-                    <a href="about.html" class="nav-item nav-link">About</a>
-                    <a href="causes.html" class="nav-item nav-link">Causes</a>
+                    <a href="about.html" class="nav-item nav-link">About Us</a>
+                    <a href="our-work.html" class="nav-item nav-link">Our Work</a>
+                    <a href="blogs.html" class="nav-item nav-link">Blogs</a>
+                    <a href="contact.html" class="nav-item nav-link">Contact</a>
                     <div class="nav-item dropdown">
-                        <a href="#" class="nav-link dropdown-toggle active" data-bs-toggle="dropdown">Pages</a>
+                        <a href="#" class="nav-link dropdown-toggle  active" data-bs-toggle="dropdown">More</a>
                         <div class="dropdown-menu m-0">
-                            <a href="service.html" class="dropdown-item">Service</a>
+                            <a href="projects.html" class="dropdown-item">Projects</a>
                             <a href="donate.html" class="dropdown-item">Donate</a>
                             <a href="team.html" class="dropdown-item active">Our Team</a>
-                            <a href="testimonial.html" class="dropdown-item">Testimonial</a>
-                            <a href="404.html" class="dropdown-item">404 Page</a>
+                            <a href="reports.html" class="dropdown-item">Reports</a>
                         </div>
                     </div>
-                    <a href="contact.html" class="nav-item nav-link">Contact</a>
                 </div>
                 <div class="d-none d-lg-flex ms-2">
-                    <a class="btn btn-outline-primary py-2 px-3" href="">
+                    <a class="btn btn-outline-primary py-2 px-3" href="donate.html">
                         Donate Now
                         <div class="d-inline-flex btn-sm-square bg-white text-primary rounded-circle ms-2">
                             <i class="fa fa-arrow-right"></i>
@@ -112,127 +151,303 @@
     <!-- Team Start -->
     <div class="container-xxl py-5">
         <div class="container">
-            <div class="text-center mx-auto mb-5 wow fadeInUp" data-wow-delay="0.1s" style="max-width: 500px;">
-                <div class="d-inline-block rounded-pill bg-secondary text-primary py-1 px-3 mb-3">Team Members</div>
-                <h1 class="display-6 mb-5">Let's Meet With Our Ordinary Soldiers</h1>
+
+            <!-- Section Title -->
+            <div class="text-center mx-auto mb-5 wow fadeInUp" data-wow-delay="0.1s" style="max-width: 600px;">
+                <div class="d-inline-block rounded-pill bg-secondary text-primary py-1 px-3 mb-3">Our Team</div>
+                <h1 class="display-6 mb-4">Meet the People Behind the Mission</h1>
+                <p class="text-muted">The heart and hands behind every dream we save.</p>
             </div>
-            <div class="row g-4">
-                <div class="col-lg-3 col-md-6 wow fadeInUp" data-wow-delay="0.1s">
-                    <div class="team-item position-relative rounded overflow-hidden">
-                        <div class="overflow-hidden">
-                            <img class="img-fluid" src="img/team-1.jpg" alt="">
-                        </div>
-                        <div class="team-text bg-light text-center p-4">
-                            <h5>Full Name</h5>
-                            <p class="text-primary">Designation</p>
-                            <div class="team-social text-center">
-                                <a class="btn btn-square" href=""><i class="fab fa-facebook-f"></i></a>
-                                <a class="btn btn-square" href=""><i class="fab fa-twitter"></i></a>
-                                <a class="btn btn-square" href=""><i class="fab fa-instagram"></i></a>
+
+            <!-- Board Members -->
+            <div class="mb-5">
+                <h3 class="text-primary mb-4 wow fadeInUp" data-wow-delay="0.2s">Board Members</h3>
+                <div class="row g-4">
+                    <!-- Repeat this block for each board member -->
+                    <div class="col-lg-3 col-md-6 wow fadeInUp" data-wow-delay="0.1s">
+                        <div class="team-item position-relative rounded overflow-hidden">
+                            <div class="overflow-hidden">
+                                <img class="img-fluid" src="img/team/profile.jpg" alt="">
+                            </div>
+                            <div class="team-text bg-light text-center p-4">
+                                <h5>Reuben Banda</h5>
+                                <p class="text-primary">Board Chairperson</p>
+                                <div class="team-social text-center">
+                                    <a class="btn btn-square" href="#"><i class="fab fa-facebook-f"></i></a>
+                                    <a class="btn btn-square" href="#"><i class="fab fa-linkedin-in"></i></a>
+                                    <a class="btn btn-square" href="#"><i class="fab fa-twitter"></i></a>
+                                </div>
                             </div>
                         </div>
                     </div>
-                </div>
-                <div class="col-lg-3 col-md-6 wow fadeInUp" data-wow-delay="0.3s">
-                    <div class="team-item position-relative rounded overflow-hidden">
-                        <div class="overflow-hidden">
-                            <img class="img-fluid" src="img/team-2.jpg" alt="">
-                        </div>
-                        <div class="team-text bg-light text-center p-4">
-                            <h5>Full Name</h5>
-                            <p class="text-primary">Designation</p>
-                            <div class="team-social text-center">
-                                <a class="btn btn-square" href=""><i class="fab fa-facebook-f"></i></a>
-                                <a class="btn btn-square" href=""><i class="fab fa-twitter"></i></a>
-                                <a class="btn btn-square" href=""><i class="fab fa-instagram"></i></a>
+
+                    <div class="col-lg-3 col-md-6 wow fadeInUp" data-wow-delay="0.1s">
+                        <div class="team-item position-relative rounded overflow-hidden">
+                            <div class="overflow-hidden">
+                                <img class="img-fluid" src="img/team/profile.jpg" alt="">
+                            </div>
+                            <div class="team-text bg-light text-center p-4">
+                                <h5>Board Member Name</h5>
+                                <p class="text-primary">Board Chairperson</p>
+                                <div class="team-social text-center">
+                                    <a class="btn btn-square" href="#"><i class="fab fa-facebook-f"></i></a>
+                                    <a class="btn btn-square" href="#"><i class="fab fa-linkedin-in"></i></a>
+                                    <a class="btn btn-square" href="#"><i class="fab fa-twitter"></i></a>
+                                </div>
                             </div>
                         </div>
                     </div>
-                </div>
-                <div class="col-lg-3 col-md-6 wow fadeInUp" data-wow-delay="0.5s">
-                    <div class="team-item position-relative rounded overflow-hidden">
-                        <div class="overflow-hidden">
-                            <img class="img-fluid" src="img/team-3.jpg" alt="">
-                        </div>
-                        <div class="team-text bg-light text-center p-4">
-                            <h5>Full Name</h5>
-                            <p class="text-primary">Designation</p>
-                            <div class="team-social text-center">
-                                <a class="btn btn-square" href=""><i class="fab fa-facebook-f"></i></a>
-                                <a class="btn btn-square" href=""><i class="fab fa-twitter"></i></a>
-                                <a class="btn btn-square" href=""><i class="fab fa-instagram"></i></a>
+
+                    <div class="col-lg-3 col-md-6 wow fadeInUp" data-wow-delay="0.1s">
+                        <div class="team-item position-relative rounded overflow-hidden">
+                            <div class="overflow-hidden">
+                                <img class="img-fluid" src="img/team/profile.jpg" alt="">
+                            </div>
+                            <div class="team-text bg-light text-center p-4">
+                                <h5>Board Member Name</h5>
+                                <p class="text-primary">Board Chairperson</p>
+                                <div class="team-social text-center">
+                                    <a class="btn btn-square" href="#"><i class="fab fa-facebook-f"></i></a>
+                                    <a class="btn btn-square" href="#"><i class="fab fa-linkedin-in"></i></a>
+                                    <a class="btn btn-square" href="#"><i class="fab fa-twitter"></i></a>
+                                </div>
                             </div>
                         </div>
                     </div>
-                </div>
-                <div class="col-lg-3 col-md-6 wow fadeInUp" data-wow-delay="0.7s">
-                    <div class="team-item position-relative rounded overflow-hidden">
-                        <div class="overflow-hidden">
-                            <img class="img-fluid" src="img/team-4.jpg" alt="">
+
+                    <div class="col-lg-3 col-md-6 wow fadeInUp" data-wow-delay="0.1s">
+                        <div class="team-item position-relative rounded overflow-hidden">
+                            <div class="overflow-hidden">
+                                <img class="img-fluid" src="img/team/profile.jpg" alt="">
+                            </div>
+                            <div class="team-text bg-light text-center p-4">
+                                <h5>Board Member Name</h5>
+                                <p class="text-primary">Board Chairperson</p>
+                                <div class="team-social text-center">
+                                    <a class="btn btn-square" href="#"><i class="fab fa-facebook-f"></i></a>
+                                    <a class="btn btn-square" href="#"><i class="fab fa-linkedin-in"></i></a>
+                                    <a class="btn btn-square" href="#"><i class="fab fa-twitter"></i></a>
+                                </div>
+                            </div>
                         </div>
-                        <div class="team-text bg-light text-center p-4">
-                            <h5>Full Name</h5>
-                            <p class="text-primary">Designation</p>
-                            <div class="team-social text-center">
-                                <a class="btn btn-square" href=""><i class="fab fa-facebook-f"></i></a>
-                                <a class="btn btn-square" href=""><i class="fab fa-twitter"></i></a>
-                                <a class="btn btn-square" href=""><i class="fab fa-instagram"></i></a>
+                    </div>
+
+                </div>
+            </div>
+
+            <!-- Core Team Members -->
+            <div class="mb-5">
+                <h3 class="text-primary mb-4 wow fadeInUp" data-wow-delay="0.2s">Core Team Members</h3>
+                <div class="row g-4">
+                    <!-- Repeat this block for each core team member -->
+                    <div class="col-lg-3 col-md-6 wow fadeInUp" data-wow-delay="0.3s">
+                        <div class="team-item position-relative rounded overflow-hidden">
+                            <div class="overflow-hidden">
+                                <img class="img-fluid" src="img/team/profile.jpg" alt="">
+                            </div>
+                            <div class="team-text bg-light text-center p-4">
+                                <h5>Rodney Katongo</h5>
+                                <p class="text-primary">CEO / Founder</p>
+                                <div class="team-social text-center">
+                                    <a class="btn btn-square" href="#"><i class="fab fa-facebook-f"></i></a>
+                                    <a class="btn btn-square" href="#"><i class="fab fa-instagram"></i></a>
+                                    <a class="btn btn-square" href="#"><i class="fab fa-linkedin-in"></i></a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col-lg-3 col-md-6 wow fadeInUp" data-wow-delay="0.3s">
+                        <div class="team-item position-relative rounded overflow-hidden">
+                            <div class="overflow-hidden">
+                                <img class="img-fluid" src="img/team/profile.jpg" alt="">
+                            </div>
+                            <div class="team-text bg-light text-center p-4">
+                                <h5>Core Member Name</h5>
+                                <p class="text-primary">Operations Manager</p>
+                                <div class="team-social text-center">
+                                    <a class="btn btn-square" href="#"><i class="fab fa-facebook-f"></i></a>
+                                    <a class="btn btn-square" href="#"><i class="fab fa-instagram"></i></a>
+                                    <a class="btn btn-square" href="#"><i class="fab fa-linkedin-in"></i></a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+
+                    <div class="col-lg-3 col-md-6 wow fadeInUp" data-wow-delay="0.3s">
+                        <div class="team-item position-relative rounded overflow-hidden">
+                            <div class="overflow-hidden">
+                                <img class="img-fluid" src="img/team/profile.jpg" alt="">
+                            </div>
+                            <div class="team-text bg-light text-center p-4">
+                                <h5>Core Member Name</h5>
+                                <p class="text-primary">Operations Manager</p>
+                                <div class="team-social text-center">
+                                    <a class="btn btn-square" href="#"><i class="fab fa-facebook-f"></i></a>
+                                    <a class="btn btn-square" href="#"><i class="fab fa-instagram"></i></a>
+                                    <a class="btn btn-square" href="#"><i class="fab fa-linkedin-in"></i></a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col-lg-3 col-md-6 wow fadeInUp" data-wow-delay="0.3s">
+                        <div class="team-item position-relative rounded overflow-hidden">
+                            <div class="overflow-hidden">
+                                <img class="img-fluid" src="img/team/profile.jpg" alt="">
+                            </div>
+                            <div class="team-text bg-light text-center p-4">
+                                <h5>Core Member Name</h5>
+                                <p class="text-primary">Operations Manager</p>
+                                <div class="team-social text-center">
+                                    <a class="btn btn-square" href="#"><i class="fab fa-facebook-f"></i></a>
+                                    <a class="btn btn-square" href="#"><i class="fab fa-instagram"></i></a>
+                                    <a class="btn btn-square" href="#"><i class="fab fa-linkedin-in"></i></a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+
+            <!-- Volunteers -->
+            <div>
+                <h3 class="text-primary mb-4 wow fadeInUp" data-wow-delay="0.2s">Volunteers</h3>
+                <div class="row g-4">
+                    <!-- Repeat this block for each volunteer -->
+                    <div class="col-lg-3 col-md-6 wow fadeInUp" data-wow-delay="0.5s">
+                        <div class="team-item position-relative rounded overflow-hidden">
+                            <div class="overflow-hidden">
+                                <img class="img-fluid" src="img/team/profile.jpg" alt="">
+                            </div>
+                            <div class="team-text bg-light text-center p-4">
+                                <h5>Aniket</h5>
+                                <p class="text-primary">Web Developer</p>
+                                <div class="team-social text-center">
+                                    <a class="btn btn-square" href="#"><i class="fab fa-facebook-f"></i></a>
+                                    <a class="btn btn-square" href="#"><i class="fab fa-instagram"></i></a>
+                                    <a class="btn btn-square" href="#"><i class="fab fa-twitter"></i></a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-3 col-md-6 wow fadeInUp" data-wow-delay="0.5s">
+                        <div class="team-item position-relative rounded overflow-hidden">
+                            <div class="overflow-hidden">
+                                <img class="img-fluid" src="img/team/profile.jpg" alt="">
+                            </div>
+                            <div class="team-text bg-light text-center p-4">
+                                <h5>Volunteer Name</h5>
+                                <p class="text-primary">Volunteer</p>
+                                <div class="team-social text-center">
+                                    <a class="btn btn-square" href="#"><i class="fab fa-facebook-f"></i></a>
+                                    <a class="btn btn-square" href="#"><i class="fab fa-instagram"></i></a>
+                                    <a class="btn btn-square" href="#"><i class="fab fa-twitter"></i></a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-3 col-md-6 wow fadeInUp" data-wow-delay="0.5s">
+                        <div class="team-item position-relative rounded overflow-hidden">
+                            <div class="overflow-hidden">
+                                <img class="img-fluid" src="img/team/profile.jpg" alt="">
+                            </div>
+                            <div class="team-text bg-light text-center p-4">
+                                <h5>Volunteer Name</h5>
+                                <p class="text-primary">Volunteer</p>
+                                <div class="team-social text-center">
+                                    <a class="btn btn-square" href="#"><i class="fab fa-facebook-f"></i></a>
+                                    <a class="btn btn-square" href="#"><i class="fab fa-instagram"></i></a>
+                                    <a class="btn btn-square" href="#"><i class="fab fa-twitter"></i></a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col-lg-3 col-md-6 wow fadeInUp" data-wow-delay="0.5s">
+                        <div class="team-item position-relative rounded overflow-hidden">
+                            <div class="overflow-hidden">
+                                <img class="img-fluid" src="img/team/profile.jpg" alt="">
+                            </div>
+                            <div class="team-text bg-light text-center p-4">
+                                <h5>Volunteer Name</h5>
+                                <p class="text-primary">Volunteer</p>
+                                <div class="team-social text-center">
+                                    <a class="btn btn-square" href="#"><i class="fab fa-facebook-f"></i></a>
+                                    <a class="btn btn-square" href="#"><i class="fab fa-instagram"></i></a>
+                                    <a class="btn btn-square" href="#"><i class="fab fa-twitter"></i></a>
+                                </div>
                             </div>
                         </div>
                     </div>
                 </div>
             </div>
+
         </div>
     </div>
     <!-- Team End -->
+
 
 
     <!-- Footer Start -->
     <div class="container-fluid bg-dark text-white-50 footer mt-5 pt-5 wow fadeIn" data-wow-delay="0.1s">
         <div class="container py-5">
             <div class="row g-5">
+                <!-- Brand and Socials -->
                 <div class="col-lg-3 col-md-6">
-                    <h1 class="fw-bold text-primary mb-4">Chari<span class="text-white">Team</span></h1>
-                    <p>Diam dolor diam ipsum sit. Aliqu diam amet diam et eos. Clita erat ipsum et lorem et sit, sed stet lorem sit clita</p>
+                    <h1 class="fw-bold text-primary mb-4">Africa<span class="text-white">Access</span></h1>
+                    <p>We empower rural communities in Africa with solar-powered water infrastructure for
+                        sustainable development and dignity.</p>
                     <div class="d-flex pt-2">
-                        <a class="btn btn-square me-1" href=""><i class="fab fa-twitter"></i></a>
-                        <a class="btn btn-square me-1" href=""><i class="fab fa-facebook-f"></i></a>
-                        <a class="btn btn-square me-1" href=""><i class="fab fa-youtube"></i></a>
-                        <a class="btn btn-square me-0" href=""><i class="fab fa-linkedin-in"></i></a>
+                        <a class="btn btn-square me-1" href="#"><i class="fab fa-twitter"></i></a>
+                        <a class="btn btn-square me-1" href="#"><i class="fab fa-facebook-f"></i></a>
+                        <a class="btn btn-square me-1" href="#"><i class="fab fa-youtube"></i></a>
+                        <a class="btn btn-square me-0" href="#"><i class="fab fa-linkedin-in"></i></a>
                     </div>
                 </div>
+
+                <!-- Contact Info -->
                 <div class="col-lg-3 col-md-6">
-                    <h5 class="text-light mb-4">Address</h5>
-                    <p><i class="fa fa-map-marker-alt me-3"></i>123 Street, New York, USA</p>
-                    <p><i class="fa fa-phone-alt me-3"></i>+012 345 67890</p>
-                    <p><i class="fa fa-envelope me-3"></i>info@example.com</p>
+                    <h5 class="text-light mb-4">Contact Us</h5>
+                    <p><i class="fa fa-map-marker-alt me-3"></i>Lot 5676/M/6, Lusaka West, Lusaka, Zambia</p>
+                    <p><i class="fa fa-phone-alt me-3"></i>+260 211 231 174 / +260 976 944 695</p>
+                    <p><i class="fa fa-envelope me-3"></i>info@africaaccesswater.org</p>
                 </div>
+
+                <!-- Quick Links -->
                 <div class="col-lg-3 col-md-6">
                     <h5 class="text-light mb-4">Quick Links</h5>
-                    <a class="btn btn-link" href="">About Us</a>
-                    <a class="btn btn-link" href="">Contact Us</a>
-                    <a class="btn btn-link" href="">Our Services</a>
-                    <a class="btn btn-link" href="">Terms & Condition</a>
-                    <a class="btn btn-link" href="">Support</a>
+                    <a class="btn btn-link" href="about.html">About Us</a>
+                    <a class="btn btn-link" href="contact.html">Contact Us</a>
+                    <a class="btn btn-link" href="service.html">What We Do</a>
+                    <a class="btn btn-link" href="donate.html">Donate</a>
+                    <a class="btn btn-link" href="#">Privacy Policy</a>
                 </div>
+
+                <!-- Newsletter -->
                 <div class="col-lg-3 col-md-6">
-                    <h5 class="text-light mb-4">Newsletter</h5>
-                    <p>Dolor amet sit justo amet elitr clita ipsum elitr est.</p>
+                    <h5 class="text-light mb-4">Subscribe</h5>
+                    <p>Get updates on our projects, impact stories, and upcoming events.</p>
                     <div class="position-relative mx-auto" style="max-width: 400px;">
-                        <input class="form-control bg-transparent w-100 py-3 ps-4 pe-5" type="text" placeholder="Your email">
-                        <button type="button" class="btn btn-primary py-2 position-absolute top-0 end-0 mt-2 me-2">SignUp</button>
+                        <input class="form-control bg-transparent w-100 py-3 ps-4 pe-5" type="email"
+                            placeholder="Your email">
+                        <button type="button"
+                            class="btn btn-primary py-2 position-absolute top-0 end-0 mt-2 me-2">SignUp</button>
                     </div>
                 </div>
             </div>
         </div>
+
+        <!-- Copyright -->
         <div class="container-fluid copyright">
             <div class="container">
                 <div class="row">
                     <div class="col-md-6 text-center text-md-start mb-3 mb-md-0">
-                        &copy; <a href="#">Your Site Name</a>, All Right Reserved.
+                        &copy; <a href="#">Africa Access Water</a>, All Rights Reserved.
                     </div>
                     <div class="col-md-6 text-center text-md-end">
-                        <!--/*** This template is free as long as you keep the footer author’s credit link/attribution link/backlink. If you'd like to use the template without the footer author’s credit link/attribution link/backlink, you can purchase the Credit Removal License from "https://htmlcodex.com/credit-removal". Thank you for your support. ***/-->
                         Designed By <a href="https://htmlcodex.com">HTML Codex</a>
                     </div>
                 </div>
@@ -257,6 +472,9 @@
 
     <!-- Template Javascript -->
     <script src="js/main.js"></script>
+    <script src="js/preloader.js"></script>
+
+
 </body>
 
 </html>

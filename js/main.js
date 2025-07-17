@@ -102,3 +102,10 @@
   });
 
 
+  function googleTranslateElementInit() {
+    new google.translate.TranslateElement({
+      pageLanguage: 'en', // Default language of your page
+      includedLanguages: 'en,fr,sw,pt,es,de,ar', // Customize this list
+      layout: google.translate.TranslateElement.InlineLayout.SIMPLE
+    }, 'google_translate_element');
+  }

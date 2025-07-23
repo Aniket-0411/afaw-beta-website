@@ -35,15 +35,20 @@ const Carousel = ({ slides, id = "header-carousel" }) => (
                     <p className="fs-5 text-white-50 mb-5 animated slideInDown">
                       {slide.desc}
                     </p>
-                    <a
-                      className="btn btn-primary py-2 px-3 animated slideInDown"
-                      href={slide.buttonLink}
-                    >
-                      {slide.buttonText}
-                      <div className="d-inline-flex btn-sm-square bg-white text-primary rounded-circle ms-2">
-                        <i className="fa fa-arrow-right"></i>
-                      </div>
-                    </a>
+                    
+                    {/* corousel button(optional) */}
+                    {slide.buttonLink && slide.buttonText && (
+                      <a
+                        href={slide.buttonLink}
+                        className="btn btn-primary py-2 px-3 animated slideInDown"
+                      >
+                        {slide.buttonText}
+                        <div className="d-inline-flex btn-sm-square bg-white text-primary rounded-circle ms-2">
+                          <i className="fa fa-arrow-right"></i>
+                        </div>
+                      </a>
+                    )}
+                    
                   </div>
                 </div>
               </div>

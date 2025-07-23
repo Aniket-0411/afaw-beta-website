@@ -1,0 +1,381 @@
+// src/pages/About.jsx
+import React from "react";
+import { Helmet } from "react-helmet";
+import Layout from "../components/Layout";
+
+function Home() {
+    return (
+        <>
+
+            <Helmet>
+                <title>Africa Access Water | Home</title>
+                <meta name="description" content="Empowering rural communities with clean water solutions." />
+                <meta property="og:title" content="Africa Access Water" />
+                <meta property="og:description" content="Empowering rural communities with solar-powered water systems." />
+                <meta property="og:image" content="/images/og-home.jpg" />
+                <meta property="og:url" content={window.location.href} />
+            </Helmet>
+
+            <Layout title="Africa Access Water" description="Learn how Africa Access Water empowers rural Africa with solar-powered water systems.">
+                {/* Carousel Start */}
+                <div className="container-fluid p-0 mb-5">
+                    <div id="header-carousel" className="carousel slide" data-bs-ride="carousel">
+                        <div className="carousel-inner">
+                            {/* Slide 1 */}
+                            <div className="carousel-item active">
+                                <img className="w-100" src="img/hero.jpg" alt="Rural Community with Water System" />
+                                <div className="carousel-caption">
+                                    <div className="container">
+                                        <div className="row justify-content-center">
+                                            <div className="col-lg-7 pt-5">
+                                                <h1 className="display-4 text-white mb-3 animated slideInDown">Empowering Africa Through Water</h1>
+                                                <p className="fs-5 text-white-50 mb-5 animated slideInDown">
+                                                    We build solar-powered water infrastructure to improve food security,
+                                                    income, and climate resilience across rural Africa.
+                                                </p>
+                                                <a className="btn btn-primary py-2 px-3 animated slideInDown" href="our-work.html">
+                                                    Explore Our Work
+                                                    <div className="d-inline-flex btn-sm-square bg-white text-primary rounded-circle ms-2">
+                                                        <i className="fa fa-arrow-right"></i>
+                                                    </div>
+                                                </a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+                            {/* Slide 2 */}
+                            <div className="carousel-item">
+                                <img className="w-100" src="img/about.jpg" alt="Women Empowerment in Agriculture" />
+                                <div className="carousel-caption">
+                                    <div className="container">
+                                        <div className="row justify-content-center">
+                                            <div className="col-lg-7 pt-5">
+                                                <h1 className="display-4 text-white mb-3 animated slideInDown">Water is Life. Empowerment is Impact.</h1>
+                                                <p className="fs-5 text-white-50 mb-5 animated slideInDown">
+                                                    Join us in empowering women, youth, and farmers with clean water for
+                                                    agriculture and economic independence.
+                                                </p>
+                                                <a className="btn btn-primary py-2 px-3 animated slideInDown" href="donate.html">
+                                                    Donate Now
+                                                    <div className="d-inline-flex btn-sm-square bg-white text-primary rounded-circle ms-2">
+                                                        <i className="fa fa-arrow-right"></i>
+                                                    </div>
+                                                </a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        {/* Controls */}
+                        <button className="carousel-control-prev" type="button" data-bs-target="#header-carousel" data-bs-slide="prev">
+                            <span className="carousel-control-prev-icon" aria-hidden="true"></span>
+                            <span className="visually-hidden">Previous</span>
+                        </button>
+                        <button className="carousel-control-next" type="button" data-bs-target="#header-carousel" data-bs-slide="next">
+                            <span className="carousel-control-next-icon" aria-hidden="true"></span>
+                            <span className="visually-hidden">Next</span>
+                        </button>
+                    </div>
+                </div>
+                {/* Carousel End */}
+
+                {/* Stats Start */}
+                <div className="container-xxl py-5 bg-light">
+                    <div className="container">
+                        <div className="row g-4 justify-content-center">
+                            {/* Stat 1 */}
+                            <div className="col-lg-3 col-md-6 wow fadeInUp" data-wow-delay="0.1s">
+                                <div className="bg-white text-center border rounded p-4">
+                                    <div className="mb-3">
+                                        <i className="fa fa-solar-panel fa-2x text-primary"></i>
+                                    </div>
+                                    <h2 className="text-primary mb-1">9</h2>
+                                    <p className="mb-0">Solar-powered Water Infrastructure in 4 project sites</p>
+                                </div>
+                            </div>
+
+                            {/* Stat 2 */}
+                            <div className="col-lg-3 col-md-6 wow fadeInUp" data-wow-delay="0.3s">
+                                <div className="bg-white text-center border rounded p-4">
+                                    <div className="mb-3">
+                                        <i className="fa fa-users fa-2x text-primary"></i>
+                                    </div>
+                                    <h2 className="text-primary mb-1">600</h2>
+                                    <p className="mb-0">(5,000 People) Households food secure with income</p>
+                                </div>
+                            </div>
+
+                            {/* Stat 3 */}
+                            <div className="col-lg-3 col-md-6 wow fadeInUp" data-wow-delay="0.5s">
+                                <div className="bg-white text-center border rounded p-4">
+                                    <div className="mb-3">
+                                        <i className="fa fa-tint fa-2x text-primary"></i>
+                                    </div>
+                                    <h2 className="text-primary mb-1">20,000</h2>
+                                    <p className="mb-0">People & 2,500 Animals with clean drinking water</p>
+                                </div>
+                            </div>
+
+                            {/* Stat 4 */}
+                            <div className="col-lg-3 col-md-6 wow fadeInUp" data-wow-delay="0.7s">
+                                <div className="bg-white text-center border rounded p-4">
+                                    <div className="mb-3">
+                                        <i className="fa fa-dollar-sign fa-2x text-primary"></i>
+                                    </div>
+                                    <h2 className="text-primary mb-1">US190,000</h2>
+                                    <p className="mb-0">Annual community income from produce</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                {/* Stats End */}
+
+                {/* About Start */}
+                <div className="container-xxl py-5">
+                    <div className="container">
+                        <div className="row g-5">
+                            {/* Image Section */}
+                            <div className="col-lg-6 wow fadeInUp" data-wow-delay="0.1s">
+                                <div className="position-relative overflow-hidden h-100" style={{ minHeight: "400px" }}>
+                                    <img className="position-absolute w-100 h-100 pt-5 pe-5" src="img/solar.jpg" alt="Solar Water Project" style={{ objectFit: "cover" }} />
+                                    <img className="position-absolute top-0 end-0 bg-white ps-2 pb-2" src="img/happy-produce.jpg" alt="Women Farmers" style={{ width: "200px", height: "200px" }} />
+                                </div>
+                            </div>
+
+                            {/* Text Section */}
+                            <div className="col-lg-6 wow fadeInUp" data-wow-delay="0.5s">
+                                <div className="h-100">
+                                    <div className="d-inline-block rounded-pill bg-secondary text-primary py-1 px-3 mb-3">About Us</div>
+                                    <h1 className="display-6 mb-5">Empowering Rural Africa Through Solar-Powered Water Solutions</h1>
+
+                                    <div className="bg-light border-bottom border-5 border-primary rounded p-4 mb-4">
+                                        <p className="text-dark mb-2">
+                                            "Water is the foundation of life and opportunity. At Africa Access Water, we believe
+                                            that when rural communities have access to clean, sustainable water, they can rise
+                                            beyond poverty and hunger."
+                                        </p>
+                                        <span className="text-primary">Rodney Katongo, Co-Founder & CEO</span>
+                                    </div>
+
+                                    <p className="mb-5">
+                                        Africa Access Water (AfAW) is a nonprofit organization based in Zambia, founded in 2019.
+                                        We implement solar-powered water infrastructure to help communities achieve food
+                                        security, increase income, and build resilience to climate change. Our programs empower
+                                        women, youth, and farmers across Zambia and beyond.
+                                    </p>
+
+                                    <a className="btn btn-primary py-2 px-3 me-3" href="about.html">
+                                        Learn More
+                                        <div className="d-inline-flex btn-sm-square bg-white text-primary rounded-circle ms-2">
+                                            <i className="fa fa-arrow-right"></i>
+                                        </div>
+                                    </a>
+                                    <a className="btn btn-outline-primary py-2 px-3" href="contact.html">
+                                        Contact Us
+                                        <div className="d-inline-flex btn-sm-square bg-primary text-white rounded-circle ms-2">
+                                            <i className="fa fa-arrow-right"></i>
+                                        </div>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                {/* About End */}
+
+                {/* Vision, Mission, Objectives Section Start */}
+                <div
+                    className="container-fluid py-5 position-relative text-white"
+                    style={{ background: "url('img/about.jpg') center center / cover no-repeat" }}
+                >
+                    <div
+                        className="position-absolute top-0 start-0 w-100 h-100"
+                        style={{ backgroundColor: 'rgba(0, 0, 0, 0.6)' }}
+                    ></div>
+
+                    <div className="container position-relative">
+                        <div className="text-center mb-5 wow fadeInUp" data-wow-delay="0.1s">
+                            <div className="d-inline-block rounded-pill bg-light text-primary py-1 px-3 mb-3">
+                                Our Core Purpose
+                            </div>
+                            <h1 className="display-6 text-white">Vision, Mission & Strategic Objectives</h1>
+                        </div>
+
+                        {/* Vision */}
+                        <div className="row mb-4 wow fadeInUp" data-wow-delay="0.2s">
+                            <div className="col-12">
+                                <div className="bg-white text-dark rounded d-flex p-4 shadow-sm align-items-center">
+                                    <div className="flex-shrink-0 me-4">
+                                        <i className="fa fa-eye fa-2x text-primary"></i>
+                                    </div>
+                                    <div>
+                                        <h5 className="text-primary mb-2">Our Vision</h5>
+                                        <p className="mb-0">African communities developed through solar-powered water.</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        {/* Mission */}
+                        <div className="row mb-4 wow fadeInUp" data-wow-delay="0.3s">
+                            <div className="col-12">
+                                <div className="bg-white text-dark rounded d-flex p-4 shadow-sm align-items-center">
+                                    <div className="flex-shrink-0 me-4">
+                                        <i className="fa fa-bullseye fa-2x text-primary"></i>
+                                    </div>
+                                    <div>
+                                        <h5 className="text-primary mb-2">Our Mission</h5>
+                                        <p className="mb-0">
+                                            To equip rural communities in Zambia and Africa with solar-powered water
+                                            infrastructure and systems for productive use, food security, and socio-economic
+                                            development.
+                                        </p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        {/* Objectives */}
+                        <div className="row wow fadeInUp" data-wow-delay="0.4s">
+                            <div className="col-12">
+                                <div className="bg-white text-dark rounded d-flex p-4 shadow-sm align-items-start">
+                                    <div className="flex-shrink-0 me-4 pt-1">
+                                        <i className="fa fa-list-ul fa-2x text-primary"></i>
+                                    </div>
+                                    <div>
+                                        <h5 className="text-primary mb-2">Our Objectives</h5>
+                                        <ol className="mb-0 ps-3">
+                                            <li className="mb-2">
+                                                Provide solar-powered water infrastructure to improve food security and
+                                                socio-economic development.
+                                            </li>
+                                            <li className="mb-2">Empower women and youth in agriculture and entrepreneurship.</li>
+                                            <li>
+                                                Advance water economics through research, innovation, and policy advocacy.
+                                            </li>
+                                        </ol>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                {/* Causes Start */}
+                <div className="container-xxl bg-light my-5 py-5">
+                    <div className="container py-5">
+                        <div
+                            className="text-center mx-auto mb-5 wow fadeInUp"
+                            data-wow-delay="0.1s"
+                            style={{ maxWidth: '600px' }}
+                        >
+                            <div className="d-inline-block rounded-pill bg-secondary text-primary py-1 px-3 mb-3">
+                                Be Part of a Project
+                            </div>
+                            <h1 className="display-6 mb-4">
+                                Together, We Build Resilience Through Clean Water and Opportunity
+                            </h1>
+                        </div>
+
+                        <div className="row g-4 justify-content-center">
+                            {[
+                                {
+                                    delay: '0.1s',
+                                    title: 'Solar-Powered Water Infrastructure',
+                                    desc:
+                                        'We install sustainable solar-powered water systems in rural Zambia, ensuring clean water for households, farms, and livestock.',
+                                    goal: 15000,
+                                    raised: 11200,
+                                    tag: 'Water Access',
+                                    img: 'img/solar.jpg',
+                                    alt: 'Solar water pump project',
+                                },
+                                {
+                                    delay: '0.3s',
+                                    title: 'Irrigated Plots for Rural Women',
+                                    desc:
+                                        'We support women-led agriculture by providing access to irrigated plots, training, and financial inclusion through savings groups.',
+                                    goal: 12000,
+                                    raised: 9000,
+                                    tag: 'Women Empowerment',
+                                    img: 'img/irrigated.jpeg',
+                                    alt: 'Women farming project',
+                                },
+                                {
+                                    delay: '0.5s',
+                                    title: 'Skills for Water & Solar Maintenance',
+                                    desc:
+                                        'We train youth in solar system maintenance, irrigation technologies, and entrepreneurship to ensure local sustainability.',
+                                    goal: 8000,
+                                    raised: 6400,
+                                    tag: 'Youth Training',
+                                    img: 'img/irrigated 1.jpg',
+                                    alt: 'Youth technical training',
+                                },
+                            ].map((cause, index) => (
+                                <div className="col-lg-4 col-md-6 wow fadeInUp" data-wow-delay={cause.delay} key={index}>
+                                    <div className="causes-item d-flex flex-column bg-white border-top border-5 border-primary rounded-top overflow-hidden h-100">
+                                        <div className="text-center p-4 pt-0">
+                                            <div className="d-inline-block bg-primary text-white rounded-bottom fs-5 pb-1 px-3 mb-4">
+                                                <small>{cause.tag}</small>
+                                            </div>
+                                            <h5 className="mb-3">{cause.title}</h5>
+                                            <p>{cause.desc}</p>
+                                            <div className="causes-progress bg-light p-3 pt-2">
+                                                <div className="d-flex justify-content-between">
+                                                    <p className="text-dark">
+                                                        ${cause.goal.toLocaleString()} <small className="text-body">Goal</small>
+                                                    </p>
+                                                    <p className="text-dark">
+                                                        ${cause.raised.toLocaleString()} <small className="text-body">Raised</small>
+                                                    </p>
+                                                </div>
+                                                <div className="progress">
+                                                    <div
+                                                        className="progress-bar"
+                                                        role="progressbar"
+                                                        style={{ width: `${(cause.raised / cause.goal) * 100}%` }}
+                                                        aria-valuenow={(cause.raised / cause.goal) * 100}
+                                                        aria-valuemin="0"
+                                                        aria-valuemax="100"
+                                                    >
+                                                        <span>{Math.round((cause.raised / cause.goal) * 100)}%</span>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div className="position-relative mt-auto">
+                                            <img className="img-fluid" src={cause.img} alt={cause.alt} />
+                                            <div className="causes-overlay">
+                                                <a className="btn btn-outline-primary" href="#">
+                                                    Read More
+                                                    <div className="d-inline-flex btn-sm-square bg-primary text-white rounded-circle ms-2">
+                                                        <i className="fa fa-arrow-right"></i>
+                                                    </div>
+                                                </a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            ))}
+                        </div>
+                    </div>
+                </div>
+
+
+
+
+
+
+            </Layout>
+        </>
+
+    );
+}
+
+export default Home;

@@ -10,11 +10,21 @@ const Carousel = ({ slides, id = "header-carousel" }) => (
             key={idx}
           >
             <img
-              className="w-100"
+              className="w-100 carousel-img"
               src={slide.img}
               alt={slide.alt}
-              style={{ height: "1000px", objectFit: "cover" }} // Adjust height as needed
+              style={{ height: "1000px", objectFit: "cover", objectPosition: "center" }}
             />
+      {/* Responsive image height for carousel */}
+      <style>
+        {`
+          @media (max-width: 767.98px) {
+            .carousel-img {
+              height: 450px !important;
+            }
+          }
+        `}
+      </style>
             <div className="carousel-caption">
               <div className="container">
                 <div className="row justify-content-center">

@@ -2,6 +2,7 @@
 import React from "react";
 import { Helmet } from "react-helmet";
 import Layout from "../components/Layout";
+import Carousel from "../components/Carousel";
 
 function Home() {
     return (
@@ -18,69 +19,28 @@ function Home() {
 
             <Layout title="Africa Access Water" description="Learn how Africa Access Water empowers rural Africa with solar-powered water systems.">
                 {/* Carousel Start */}
-                <div className="container-fluid p-0 mb-5">
-                    <div id="header-carousel" className="carousel slide" data-bs-ride="carousel">
-                        <div className="carousel-inner">
-                            {/* Slide 1 */}
-                            <div className="carousel-item active">
-                                <img className="w-100" src="img/hero.jpg" alt="Rural Community with Water System" />
-                                <div className="carousel-caption">
-                                    <div className="container">
-                                        <div className="row justify-content-center">
-                                            <div className="col-lg-7 pt-5">
-                                                <h1 className="display-4 text-white mb-3 animated slideInDown">Empowering Africa Through Water</h1>
-                                                <p className="fs-5 text-white-50 mb-5 animated slideInDown">
-                                                    We build solar-powered water infrastructure to improve food security,
-                                                    income, and climate resilience across rural Africa.
-                                                </p>
-                                                <a className="btn btn-primary py-2 px-3 animated slideInDown" href="our-work.html">
-                                                    Explore Our Work
-                                                    <div className="d-inline-flex btn-sm-square bg-white text-primary rounded-circle ms-2">
-                                                        <i className="fa fa-arrow-right"></i>
-                                                    </div>
-                                                </a>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-
-                            {/* Slide 2 */}
-                            <div className="carousel-item">
-                                <img className="w-100" src="img/about.jpg" alt="Women Empowerment in Agriculture" />
-                                <div className="carousel-caption">
-                                    <div className="container">
-                                        <div className="row justify-content-center">
-                                            <div className="col-lg-7 pt-5">
-                                                <h1 className="display-4 text-white mb-3 animated slideInDown">Water is Life. Empowerment is Impact.</h1>
-                                                <p className="fs-5 text-white-50 mb-5 animated slideInDown">
-                                                    Join us in empowering women, youth, and farmers with clean water for
-                                                    agriculture and economic independence.
-                                                </p>
-                                                <a className="btn btn-primary py-2 px-3 animated slideInDown" href="donate.html">
-                                                    Donate Now
-                                                    <div className="d-inline-flex btn-sm-square bg-white text-primary rounded-circle ms-2">
-                                                        <i className="fa fa-arrow-right"></i>
-                                                    </div>
-                                                </a>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-
-                        {/* Controls */}
-                        <button className="carousel-control-prev" type="button" data-bs-target="#header-carousel" data-bs-slide="prev">
-                            <span className="carousel-control-prev-icon" aria-hidden="true"></span>
-                            <span className="visually-hidden">Previous</span>
-                        </button>
-                        <button className="carousel-control-next" type="button" data-bs-target="#header-carousel" data-bs-slide="next">
-                            <span className="carousel-control-next-icon" aria-hidden="true"></span>
-                            <span className="visually-hidden">Next</span>
-                        </button>
-                    </div>
-                </div>
+                <Carousel
+                  slides={[
+                    {
+                      img: "img/hero.jpg",
+                      alt: "Rural Community with Water System",
+                      title: "Empowering Africa Through Water",
+                      desc:
+                        "We build solar-powered water infrastructure to improve food security, income, and climate resilience across rural Africa.",
+                      buttonText: "Explore Our Work",
+                      buttonLink: "our-work.html",
+                    },
+                    {
+                      img: "img/about.jpg",
+                      alt: "Women Empowerment in Agriculture",
+                      title: "Water is Life. Empowerment is Impact.",
+                      desc:
+                        "Join us in empowering women, youth, and farmers with clean water for agriculture and economic independence.",
+                      buttonText: "Donate Now",
+                      buttonLink: "donate.html",
+                    },
+                  ]}
+                />
                 {/* Carousel End */}
 
                 {/* Stats Start */}

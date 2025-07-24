@@ -8,7 +8,7 @@ const VisionMissionObjectives = () => {
         <div className="container">
             <div className="row">
                 <div className="col-lg-12">
-                    <div className="section-title text-center mx-auto responsive-width">
+                    <div className="section-title text-center px-4 mx-auto responsive-width">
                         <h2>Welcome to Africa Access Water</h2>
                         <p>We are a non-profit organization based in Zambia, established in 2019. We design, equip, and
                             implement sustainable solar-powered water infrastructure and systems for productive use,

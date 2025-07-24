@@ -4,8 +4,45 @@ import Layout from "../components/Layout";
 import Header from "../components/Header";
 
 const Contact = () => {
+  const [formData, setFormData] = useState({
+    name: "",
+    email: "",
+    message: ""
+  });
 
+  const [status, setStatus] = useState("");
 
+  const handleChange = (e) => {
+    setFormData((prev) => ({
+      ...prev,
+      [e.target.id]: e.target.value
+    }));
+  };
+
+  const handleSubmit = async (e) => {
+    e.preventDefault();
+    setStatus("sending");
+
+    try {
+      const response = await fetch("https://afaw-beta-api.onrender.com/api/contact", {
+        method: "POST",
+        headers: {
+          "Content-Type": "application/json"
+        },
+        body: JSON.stringify(formData)
+      });
+
+      if (response.ok) {
+        setStatus("success");
+        setFormData({ name: "", email: "", message: "" });
+      } else {
+        throw new Error("Something went wrong");
+      }
+    } catch (error) {
+      console.error(error);
+      setStatus("error");
+    }
+  };
     return (
 
         <>
@@ -30,35 +67,23 @@ const Contact = () => {
                                     Whether you want to partner, support, or inquire about our solar-powered water systems, feel free to
                                     contact us. We’re ready to respond.
                                 </p>
-                                <form id="contactForm">
+                                <form onSubmit={handleSubmit}>
                                     <div className="row g-3">
                                         <div className="col-md-6">
                                             <div className="form-floating">
-                                                <input type="text" className="form-control" id="name" placeholder="Your Name" required />
+                                                <input type="text" className="form-control" id="name" placeholder="Your Name" value={formData.name} onChange={handleChange} required />
                                                 <label htmlFor="name">Your Name</label>
                                             </div>
                                         </div>
                                         <div className="col-md-6">
                                             <div className="form-floating">
-                                                <input type="email" className="form-control" id="email" placeholder="Your Email" required />
+                                                <input type="email" className="form-control" id="email" placeholder="Your Email" value={formData.email} onChange={handleChange} required />
                                                 <label htmlFor="email">Your Email</label>
                                             </div>
                                         </div>
                                         <div className="col-12">
                                             <div className="form-floating">
-                                                <input type="text" className="form-control" id="subject" placeholder="Subject" />
-                                                <label htmlFor="subject">Subject</label>
-                                            </div>
-                                        </div>
-                                        <div className="col-12">
-                                            <div className="form-floating">
-                                                <textarea
-                                                    className="form-control"
-                                                    placeholder="Leave a message here"
-                                                    id="message"
-                                                    style={{ height: '120px' }}
-                                                    required
-                                                ></textarea>
+                                                <textarea className="form-control" id="message" placeholder="Leave a message here" style={{ height: '120px' }} value={formData.message} onChange={handleChange} required />
                                                 <label htmlFor="message">Message</label>
                                             </div>
                                         </div>
@@ -66,8 +91,10 @@ const Contact = () => {
                                             <button type="submit" className="btn btn-primary py-2 px-4">
                                                 Send Message <i className="fa fa-paper-plane ms-2"></i>
                                             </button>
-                                            <div id="formStatus" className="mt-3 text-success d-none">
-                                                Message sent successfully!
+                                            <div id="formStatus" className="mt-3 text-success">
+                                                {status === "success" && "Message sent successfully!"}
+                                                {status === "error" && "Something went wrong. Please try again."}
+                                                {status === "sending" && "Sending..."}
                                             </div>
                                         </div>
                                     </div>

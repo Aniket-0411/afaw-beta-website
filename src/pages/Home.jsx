@@ -3,6 +3,7 @@ import React from "react";
 import { Helmet } from "react-helmet";
 import Layout from "../components/Layout";
 import Carousel from "../components/Carousel";
+import VisionMissionObjectives from "../components/VisionMissionObjectives ";
 
 function Home() {
     return (
@@ -95,6 +96,8 @@ function Home() {
                 </div>
                 {/* Stats End */}
 
+                <VisionMissionObjectives/>
+                
                 {/* About Start */}
                 <div className="container-xxl py-5">
                     <div className="container">

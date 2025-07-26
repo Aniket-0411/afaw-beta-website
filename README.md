@@ -3,5 +3,5 @@ Africa Access Water - Beta Website
 
 
 # Preview
-[http://beta.africaaccesswater.org/
+[http://afaw-beta-website.vercel.app/
 ](https://afaw-beta-website.vercel.app/)

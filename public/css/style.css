@@ -576,6 +576,14 @@
 
 /*** Footer ***/
 
+.no-bottom-margin {
+  margin-bottom: 5px;
+}
+
+.small-font-size {
+  font-size: 0.9rem; /* or any size you want, e.g., 14px */
+}
+
 .footer .btn.btn-link {
   display: block;
   margin-bottom: 5px;

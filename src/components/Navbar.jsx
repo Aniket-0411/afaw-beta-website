@@ -37,10 +37,10 @@ const Navbar = () => {
             <nav className="navbar navbar-expand-lg navbar-dark py-lg-0 px-lg-5 wow fadeIn" data-wow-delay="0.1s">
                 <Link to="/" className="navbar-brand ms-4 ms-lg-0">
                     <img
-                        src="/img/logos/afaw-logo-africa.png"
+                        src="/img/logos/afaw-logo-white.png"
                         alt="afaw-logo-africa"
                         className="img-fluid"
-                        style={{ width: 50, height: 50 }}
+                        style={{ width: "50px", height: "auto" }}
                     />
                 </Link>
                 <div class="me-4">

@@ -6,6 +6,7 @@ const VisionMissionObjectives = () => {
     <>
     <section className="Feautes section">
         <div className="container">
+            {/* about us */}
             <div className="row">
                 <div className="col-lg-12">
                     <div className="section-title text-center px-4 mx-auto responsive-width">
@@ -16,6 +17,7 @@ const VisionMissionObjectives = () => {
                     </div>
                 </div>
             </div>
+            {/* our vision and mission */}
             <div className="row">
                 <div className="col-lg-6 col-12">
                     <div className="single-features">

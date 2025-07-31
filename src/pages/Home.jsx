@@ -58,7 +58,7 @@ function Home() {
                 {/*Stats Section*/}
                 <div className="container-xxl py-5 bg-light">
                     <div className="container">
-                        <div className="row g-4 justify-content-center">
+                        <div className="row g-4 justify-content-center align-items-stretch">
                             <Stat icon="fa fa-solar-panel" number="9" text="Solar-powered water infrastructure in 4 project sites" />
                             <Stat icon="fa fa-users" number="6,000" text="Households food secure with income" />
                             <Stat icon="fa fa-tint" number="30,000" text="People & 2,500 animals with clean drinking water" />

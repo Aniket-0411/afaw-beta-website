@@ -1,26 +1,64 @@
 import React from "react";
 
 const Carousel = ({ slides, id = "header-carousel" }) => (
-  <div className="container-fluid p-0 mb-5">
-    <div id={id} className="carousel slide" data-bs-ride="carousel">
-      <div className="carousel-inner">
+  <div className="container-fluid p-0 h-100">
+    <div id={id} className="carousel slide h-100" data-bs-ride="carousel">
+      <div className="carousel-inner h-100">
         {slides.map((slide, idx) => (
           <div
-            className={`carousel-item${idx === 0 ? " active" : ""}`}
+            className={`carousel-item h-100${idx === 0 ? " active" : ""}`}
             key={idx}
+            style={{ height: "100vh", overflow: "hidden" }}
           >
             <img
-              className="w-100 carousel-img"
+              className="w-100 h-100 carousel-img"
               src={slide.img}
               alt={slide.alt}
-              style={{ height: "1000px", objectFit: "cover", objectPosition: "center" }}
+              style={{ 
+                objectFit: "cover", 
+                objectPosition: "center",
+                height: "100vh",
+                width: "100%"
+              }}
             />
-      {/* Responsive image height for carousel */}
+      {/* Responsive carousel styling */}
       <style>
         {`
+          .carousel-item {
+            height: 100vh !important;
+            overflow: hidden !important;
+          }
+          .carousel-img {
+            height: 100vh !important;
+            width: 100% !important;
+            object-fit: cover !important;
+            object-position: center !important;
+          }
+          .carousel-caption {
+            position: absolute;
+            top: 0;
+            left: 0;
+            right: 0;
+            bottom: 0;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            background: rgba(6, 32, 33, 0.8);                 //Background opacity for the image
+            z-index: 5;
+          }
+          .carousel-control-prev,
+          .carousel-control-next {
+            z-index: 15 !important;
+          }
           @media (max-width: 767.98px) {
-            .carousel-img {
-              height: 450px !important;
+            .carousel-caption {
+              padding: 0 20px;
+            }
+            .carousel-caption h1 {
+              font-size: 2rem !important;
+            }
+            .carousel-caption p {
+              font-size: 1rem !important;
             }
           }
         `}
@@ -28,11 +66,11 @@ const Carousel = ({ slides, id = "header-carousel" }) => (
             <div className="carousel-caption">
               <div className="container">
                 <div className="row justify-content-center">
-                  <div className="col-lg-7 pt-5">
+                  <div className="col-lg-8 col-md-10 col-sm-12 text-center">
                     <h1 className="display-4 text-white mb-3 animated slideInDown">
                       {slide.title}
                     </h1>
-                    <p className="fs-5 text-white-50 mb-5 animated slideInDown">
+                    <p className="fs-5 text-white mb-5 animated slideInDown">
                       {slide.desc}
                     </p>
                     

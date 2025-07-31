@@ -44,7 +44,7 @@ const Navbar = () => {
                     />
                 </Link>
                 <div class="me-4">
-                <a className="btn btn-outline-primary btn-sm py-1 px-2 d-lg-none me-2" href="donate.html" style={{ whiteSpace: 'nowrap', display: 'inline-flex', alignItems: 'center' }}>
+                <a className="btn btn-primary btn-outline-primary btn-sm py-1 px-2 d-lg-none me-2" href="donate.html" style={{ whiteSpace: 'nowrap', display: 'inline-flex', alignItems: 'center' }}>
                     Donate
                     <div className="d-inline-flex btn-sm-square bg-white text-primary rounded-circle ms-1" style={{ width: 22, height: 22, fontSize: 14 }}>
                         <i className="fa fa-arrow-right"></i>
@@ -62,18 +62,10 @@ const Navbar = () => {
                         <Link to="/blogs" className={`nav-item ${isActive("/blogs")}`}>Blogs</Link>
                         <Link to="/contact" className={`nav-item ${isActive("/contact")}`}>Contact</Link>
 
-                        <div className="nav-item dropdown">
-                            <a href="#" className="nav-link dropdown-toggle" data-bs-toggle="dropdown">More</a>
-                            <div className="dropdown-menu m-0">
-                                <Link to="/projects" className="dropdown-item">Projects</Link>
-                                <Link to="/donate" className="dropdown-item">Donate</Link>
-                                <Link to="/team" className="dropdown-item">Our Team</Link>
-                                <Link to="/reports" className="dropdown-item">Reports</Link>
-                            </div>
-                        </div>
+                        
                     </div>
                     <div className="d-none d-lg-flex ms-2">
-                        <Link className="btn btn-outline-primary py-2 px-3" to="/donate">
+                        <Link className="btn btn-primary btn-outline-primary py-2 px-3" to="/donate">
                             Donate Now
                             <div className="d-inline-flex btn-sm-square bg-white text-primary rounded-circle ms-2">
                                 <i className="fa fa-arrow-right"></i>

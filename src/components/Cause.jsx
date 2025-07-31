@@ -34,7 +34,13 @@ const Cause = ({ delay, title, desc, goal, raised, tag, img, alt }) => {
           </div>
         </div>
         <div className="position-relative mt-auto">
-          <img className="img-fluid" src={img} alt={alt} />
+          <img className="img-fluid" src={img} alt={alt} 
+              style={{
+                height: "250px",
+                width: "100%",
+                objectFit: "cover",
+                objectPosition: "center"
+          }}/>
           <div className="causes-overlay">
             <a className="btn btn-outline-primary" href="#">
               Read More

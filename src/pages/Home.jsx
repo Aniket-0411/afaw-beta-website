@@ -24,6 +24,9 @@ function Home() {
 
             <Layout title="Africa Access Water" description="Learn how Africa Access Water empowers rural Africa with solar-powered water systems.">
                 {/* Carousel Start */}
+                <section className="vh-100" style={{ overflow: "hidden" }}> 
+                    
+                
                 <Carousel
                   slides={[
                     {
@@ -32,8 +35,8 @@ function Home() {
                       title: "Empowering Africa Through Water",
                       desc:
                         "We build solar-powered water infrastructure to improve food security, income, and climate resilience across rural Africa.",
-                      buttonText: "Explore Our Work",
-                      buttonLink: "our-work.html",
+                      buttonText: "Donate Now",
+                      buttonLink: "donate.html",
                     },
                     {
                       img: "img/about.jpg",
@@ -46,6 +49,7 @@ function Home() {
                     },
                   ]}
                 />
+                </section>
                 {/* Carousel End */}
 
                 {/*Stats Section*/}
@@ -54,7 +58,7 @@ function Home() {
                         <div className="row g-4 justify-content-center">
                             <Stat icon="fa fa-solar-panel" number="9" text="Solar-powered Water Infrastructure in 4 project sites" />
                             <Stat icon="fa fa-users" number="600" text="(5,000 People) Households food secure with income" />
-                            <Stat icon="fa fa-tint" number="20000" text="People & 2,500 Animals with clean drinking water" />
+                            <Stat icon="fa fa-tint" number="30000" text="People & 2,500 Animals with clean drinking water" />
                             <Stat icon="fa fa-dollar-sign" number="190000" text="Annual community income from produce" />
                         </div>
                     </div>

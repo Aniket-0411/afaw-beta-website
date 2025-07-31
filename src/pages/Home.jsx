@@ -3,12 +3,13 @@ import React from "react";
 import { Helmet } from "react-helmet";
 import Layout from "../components/Layout";
 import Carousel from "../components/Carousel";
-import VisionMissionObjectives from "../components/VisionMissionObjectives ";
+import VisionMission from "../components/VisionMission ";
 
 import { causes } from '../data/causesData';
 import Stat from '../components/Stat';
 import Cause from '../components/Cause';
 import About from '../components/About';
+import Objectives from "../components/Objectives";
 
 function Home() {
     return (
@@ -52,19 +53,21 @@ function Home() {
                 </section>
                 {/* Carousel End */}
 
+                <VisionMission/>
+
                 {/*Stats Section*/}
                 <div className="container-xxl py-5 bg-light">
                     <div className="container">
                         <div className="row g-4 justify-content-center">
-                            <Stat icon="fa fa-solar-panel" number="9" text="Solar-powered Water Infrastructure in 4 project sites" />
-                            <Stat icon="fa fa-users" number="600" text="(5,000 People) Households food secure with income" />
-                            <Stat icon="fa fa-tint" number="30000" text="People & 2,500 Animals with clean drinking water" />
-                            <Stat icon="fa fa-dollar-sign" number="190000" text="Annual community income from produce" />
+                            <Stat icon="fa fa-solar-panel" number="9" text="Solar-powered water infrastructure in 4 project sites" />
+                            <Stat icon="fa fa-users" number="6,000" text="Households food secure with income" />
+                            <Stat icon="fa fa-tint" number="30,000" text="People & 2,500 animals with clean drinking water" />
+                            <Stat icon="fa fa-dollar-sign" number="190,000" text="US$ annually communities' income from produce" />
                         </div>
                     </div>
                 </div>
 
-                <VisionMissionObjectives/>
+                <Objectives/>
                 
                 {/* About Section */}
                 <div className="container-xxl py-5">

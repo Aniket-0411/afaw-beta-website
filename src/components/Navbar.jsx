@@ -60,6 +60,7 @@ const Navbar = () => {
                         <Link to="/about" className={`nav-item ${isActive("/about")}`}>About Us</Link>
                         <Link to="/our-work" className={`nav-item ${isActive("/our-work")}`}>Our Work</Link>
                         <Link to="/blogs" className={`nav-item ${isActive("/blogs")}`}>Blogs</Link>
+                        <Link to="/team" className={`nav-item ${isActive("/team")}`}>Our Team</Link>
                         <Link to="/contact" className={`nav-item ${isActive("/contact")}`}>Contact</Link>
 
                         

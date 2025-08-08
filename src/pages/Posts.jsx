@@ -4,7 +4,7 @@ import Header from "../components/Header";
 import PostCard from "../components/PostCard";
 import {posts} from "../data/postsData";
 
-function Posts() {
+const Posts = () => {
   return (
     <Layout title="Blank Page - Africa Access Water">
       <Header title="Blank" current="posts" />

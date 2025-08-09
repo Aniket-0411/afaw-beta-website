@@ -41,9 +41,9 @@ const Team = () => {
       <Header title="Our Team" current="team" />
       <div className="container-xxl py-5 mt-5">
         <div className="container">
-          <div className="text-center mx-auto mb-5" style={{ maxWidth: "650px" }}>
+          <div className="text-center mx-auto mb-5" style={{ maxWidth: "600px" }}>
             <h1 className="mb-3">Meet Our Team</h1>
-            <p>We are a group of passionate individuals committed to creating sustainable impact.</p>
+            <p>The team members battling rural poverty</p>
           </div>
           
           {loading ? (
@@ -54,7 +54,7 @@ const Team = () => {
               <p className="mt-2">Loading team members...</p>
             </div>
           ) : (
-            <div className="row g-4 mx-2 mx-md-3 mx-lg-5">
+            <div className="row g-4 text-center mx-2 mx-md-3 mx-lg-5">
               {displayTeams.map((member, index) => (
                 <TeamCard 
                   key={member.id || index} 

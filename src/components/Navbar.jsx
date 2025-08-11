@@ -43,7 +43,7 @@ const Navbar = () => {
                         style={{ width: "50px", height: "auto" }}
                     />
                 </Link>
-                <div class="me-4">
+                <div className="me-4">
                 <a className="btn btn-primary btn-outline-primary btn-sm py-1 px-2 d-lg-none me-2" href="donate.html" style={{ whiteSpace: 'nowrap', display: 'inline-flex', alignItems: 'center' }}>
                     Donate
                     <div className="d-inline-flex btn-sm-square bg-white text-primary rounded-circle ms-1" style={{ width: 22, height: 22, fontSize: 14 }}>

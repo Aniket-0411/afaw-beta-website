@@ -3,6 +3,8 @@ name: Update Team Data
 on:
   repository_dispatch:
     types: [update-team-data]
+  workflow_dispatch:
+
 
 jobs:
   update-team-data:

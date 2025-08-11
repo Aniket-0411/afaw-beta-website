@@ -1,43 +1,135 @@
 // Auto-generated from API - Do not edit manually
-// Last updated: $(date -u +"%Y-%m-%d %H:%M:%S UTC")
+// Last updated: 2025-01-27 10:30:00 UTC
 
-export const teamMembers = 
-[
+export const teamMembers = [
   {
-    "id": 4,
-    "type": "Volunteer",
-    "full_name": "Aniket Chopade",
-    "title": "Mr.",
-    "socials": "https://www.linkedin.com/in/achopade",
-    "position": "Software and Web developer",
-    "image_url": "https://res.cloudinary.com/dz3tgvaiw/image/upload/v1754943779/teams/1754943775461-aaaa.JPG.jpg",
-    "bio": "",
-    "created_at": "2025-08-11T20:23:00.303Z",
-    "updated_at": "2025-08-11T20:23:00.303Z"
+    "id": 1,
+    "type": "Board Member",
+    "full_name": "Reuben Banda",
+    "title": "Mr",
+    "socials": "",
+    "position": "Chairman",
+    "image_url": "https://africaaccesswater.org/main_website/img/team/Screenshot(131).png",
+    "bio": "Reuben is the Managing Director and Co-Founder of Musika Development Limited, one of the biggest organisations in Zambia. He has more than 20 years of experience in Agribusiness and market systems.",
+    "role": "Reuben is the Managing Director and Co-Founder of Musika Development Limited, one of the biggest organisations in Zambia. He has more than 20 years of experience in Agribusiness and market systems.",
+    "created_at": "2025-01-27T10:30:00.000Z",
+    "updated_at": "2025-01-27T10:30:00.000Z"
+  },
+  {
+    "id": 2,
+    "type": "Board Member",
+    "full_name": "Paul Kapanda",
+    "title": "Mr",
+    "socials": "",
+    "position": "Co-founder & Co-Chairman",
+    "image_url": "https://africaaccesswater.org/main_website/img/team/Screenshot(132).png",
+    "bio": "Paul is the Co-founder & Co-Chairman of Africa Access Water, he has more than 20 years of experience in water systems and business management.",
+    "role": "Paul is the Co-founder & Co-Chairman of Africa Access Water, he has more than 20 years of experience in water systems and business management.",
+    "created_at": "2025-01-27T10:30:00.000Z",
+    "updated_at": "2025-01-27T10:30:00.000Z"
   },
   {
     "id": 3,
-    "type": "Volunteer",
-    "full_name": "Bupe Katongo",
+    "type": "Board Member",
+    "full_name": "Maurice Dillon",
+    "title": "Mr",
+    "socials": "",
+    "position": "Finance & Resource Mobilisation",
+    "image_url": "https://africaaccesswater.org/main_website/img/team/Screenshot(129).png",
+    "bio": "Maurice is a Master of Laws and is a member of the Royal Institute of British Architects. He has delivered numerous major projects throughout Middle East, Africa and Europe. He brings with him a wealth of experience in economic development as well as best-practice in sustainable development.",
+    "role": "Maurice is a Master of Laws and is a member of the Royal Institute of British Architects. He has delivered numerous major projects throughout Middle East, Africa and Europe. He brings with him a wealth of experience in economic development as well as best-practice in sustainable development.",
+    "created_at": "2025-01-27T10:30:00.000Z",
+    "updated_at": "2025-01-27T10:30:00.000Z"
+  },
+  {
+    "id": 4,
+    "type": "Board Member",
+    "full_name": "Anna Butler",
+    "title": "Ms",
+    "socials": "",
+    "position": "Global Networks & Partnerships Advisor",
+    "image_url": "https://africaaccesswater.org/main_website/img/team/anna.png",
+    "bio": "Anna is a Harvard Scholar with extensive experience in sustainable social programming, equitable education access, and global protection policies.",
+    "role": "Anna is a Harvard Scholar with extensive experience in sustainable social programming, equitable education access, and global protection policies.",
+    "created_at": "2025-01-27T10:30:00.000Z",
+    "updated_at": "2025-01-27T10:30:00.000Z"
+  },
+  {
+    "id": 5,
+    "type": "Team Member",
+    "full_name": "Rodney Katongo",
     "title": "Mr",
     "socials": "https://web.facebook.com/profile.php?id=100092203206527",
     "position": "Web Developer",
     "image_url": "https://res.cloudinary.com/dz3tgvaiw/image/upload/v1754681924/teams/1754681904439-1.png.png",
     "bio": "Grad School — Networking and Telecommunications Technology, Software engineering(Full stack developer) and Professional Graphic Design, Web Design and Freelancing Course",
+    "role": "Co-Founder & Chief Executive Officer",
     "created_at": "2025-08-08T19:38:51.436Z",
     "updated_at": "2025-08-08T19:38:51.436Z"
   },
   {
-    "id": 2,
-    "type": "Volunteer",
-    "full_name": "Ifeoma Campos",
-    "title": "Deserunt cupiditate ",
+    "id": 6,
+    "type": "Team Member",
+    "full_name": "Isaiah Mwanza",
+    "title": "Mr",
     "socials": "Quidem exercitation ",
-    "position": "Reprehenderit eius c",
-    "image_url": "https://res.cloudinary.com/dz3tgvaiw/image/upload/v1754659420/teams/1754691744023-afaw-logo-black.png.png",
+    "position": "Director of Projects",
+    "image_url": "https://africaaccesswater.org/main_website/img/team-3.jpg",
     "bio": "Enim consequuntur et",
+    "role": "Director of Projects",
+    "created_at": "2025-08-08T13:23:41.492Z",
+    "updated_at": "2025-08-08T13:23:41.492Z"
+  },
+  {
+    "id": 7,
+    "type": "Team Member",
+    "full_name": "Temwa Gondwe",
+    "title": "Mr",
+    "socials": "Quidem exercitation ",
+    "position": "Advocacy & Communication Officer",
+    "image_url": "https://africaaccesswater.org/main_website/img/team/temwa.jpg",
+    "bio": "Enim consequuntur et",
+    "role": "Advocacy & Communication Officer",
+    "created_at": "2025-08-08T13:23:41.492Z",
+    "updated_at": "2025-08-08T13:23:41.492Z"
+  },
+  {
+    "id": 8,
+    "type": "Team Member",
+    "full_name": "Talent Madubeka",
+    "title": "Mr",
+    "socials": "Quidem exercitation ",
+    "position": "Sustainable Livelihoods Officer",
+    "image_url": "https://africaaccesswater.org/main_website/img/team/talent.jpg",
+    "bio": "Enim consequuntur et",
+    "role": "Sustainable Livelihoods Officer",
+    "created_at": "2025-08-08T13:23:41.492Z",
+    "updated_at": "2025-08-08T13:23:41.492Z"
+  },
+  {
+    "id": 9,
+    "type": "Team Member",
+    "full_name": "Siyana Zulu",
+    "title": "Mr",
+    "socials": "Quidem exercitation ",
+    "position": "Finance Manager",
+    "image_url": "https://africaaccesswater.org/main_website/img/team/zulu.jpg",
+    "bio": "Enim consequuntur et",
+    "role": "Finance Manager",
+    "created_at": "2025-08-08T13:23:41.492Z",
+    "updated_at": "2025-08-08T13:23:41.492Z"
+  },
+  {
+    "id": 10,
+    "type": "Team Member",
+    "full_name": "Ange Arsene Ossiala",
+    "title": "Mr",
+    "socials": "Quidem exercitation ",
+    "position": "Country Representative- Congo Brazzaville",
+    "image_url": "https://africaaccesswater.org/main_website/img/team/ange.jpg",
+    "bio": "Enim consequuntur et",
+    "role": "Country Representative- Congo Brazzaville",
     "created_at": "2025-08-08T13:23:41.492Z",
     "updated_at": "2025-08-08T13:23:41.492Z"
   }
-]
-;
+];

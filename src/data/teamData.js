@@ -1,13 +1,31 @@
-export const teams = [
+// Auto-generated from API - Do not edit manually
+// Last updated: $(date -u +"%Y-%m-%d %H:%M:%S UTC")
+
+export const teamMembers = 
+[
   {
-    id: 2,
-    type: "Volunteer",
-    full_name: "Ifeoma Campos",
-    title: "Deserunt cupiditate ",
-    socials: "Quidem exercitation ",
-    position: "Reprehenderit eius c",
-    image_url:
-      "https://res.cloudinary.com/dz3tgvaiw/image/upload/v1754681924/teams/1754681904439-1.png.png",
-    bio: "Enim consequuntur et",
+    "id": 3,
+    "type": "Volunteer",
+    "full_name": "Bupe Katongo",
+    "title": "Mr",
+    "socials": "https://web.facebook.com/profile.php?id=100092203206527",
+    "position": "Web Developer",
+    "image_url": "https://res.cloudinary.com/dz3tgvaiw/image/upload/v1754681924/teams/1754681904439-1.png.png",
+    "bio": "Grad School — Networking and Telecommunications Technology, Software engineering(Full stack developer) and Professional Graphic Design, Web Design and Freelancing Course",
+    "created_at": "2025-08-08T19:38:51.436Z",
+    "updated_at": "2025-08-08T19:38:51.436Z"
   },
-];
+  {
+    "id": 2,
+    "type": "Volunteer",
+    "full_name": "Ifeoma Campos",
+    "title": "Deserunt cupiditate ",
+    "socials": "Quidem exercitation ",
+    "position": "Reprehenderit eius c",
+    "image_url": "https://res.cloudinary.com/dz3tgvaiw/image/upload/v1754659420/teams/1754691744023-afaw-logo-black.png.png",
+    "bio": "Enim consequuntur et",
+    "created_at": "2025-08-08T13:23:41.492Z",
+    "updated_at": "2025-08-08T13:23:41.492Z"
+  }
+]
+;

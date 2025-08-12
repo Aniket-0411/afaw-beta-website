@@ -58,6 +58,7 @@ const Team = () => {
                 <TeamCard 
                   key={member.id || index} 
                   {...member} 
+                  role= ""
                   alt={member.full_name}
                 />
               ))}

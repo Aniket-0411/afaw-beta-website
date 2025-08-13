@@ -4,9 +4,6 @@ on:
   repository_dispatch:
     types: [update-team-data]
   workflow_dispatch:
-  schedule:
-    # Run daily at 2 AM UTC to keep data fresh
-    - cron: '0 2 * * *'
 
 permissions:
   contents: write

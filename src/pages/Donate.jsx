@@ -31,8 +31,8 @@ const Donate = () => {
         // choose API endpoint
         const endpoint =
             data.donation_type === "recurring"
-                ? "http://localhost:5000/api/donations/subscribe"
-                : "http://localhost:5000/api/donations/donate";
+                ? "https://afaw-beta-api.onrender.com/api/donations/subscribe"
+                : "https://afaw-beta-api.onrender.com/api/donations/donate";
 
         try {
             const res = await fetch(endpoint, {

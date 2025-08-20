@@ -1,8 +1,20 @@
 // Auto-generated from API - Do not edit manually
-// Last updated: $(date -u +"%Y-%m-%d %H:%M:%S UTC")
+// Last updated: 2025-08-20 16:23:47 UTC
 
 export const teamMembers = 
 [
+  {
+    "id": 15,
+    "type": "Volunteer",
+    "full_name": "Aniket Chopade",
+    "title": null,
+    "socials": "",
+    "position": "Software Engineer",
+    "image_url": "https://res.cloudinary.com/dz3tgvaiw/image/upload/v1755706920/teams/1755706919605-aaaa.JPG.jpg",
+    "bio": "",
+    "created_at": "2025-08-20T16:22:00.896Z",
+    "updated_at": "2025-08-20T16:22:00.896Z"
+  },
   {
     "id": 14,
     "type": "Board Member",

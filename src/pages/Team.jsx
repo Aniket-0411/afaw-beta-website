@@ -19,6 +19,10 @@ const Team = () => {
     .filter(member => member.type === "Team Member")
     .sort((a, b) => a.id - b.id);
 
+  const volunteersList = teamMembers
+    .filter(member => member.type === "Volunteer")
+    .sort((a, b) => a.id - b.id);
+
   return (
     <Layout title="Our Team - Africa Access Water">
       <Header title="Our Team" current="team" />
@@ -37,7 +41,7 @@ const Team = () => {
                     full_name={member.full_name}
                     image_url={member.image_url}
                     position={member.position}
-                    role={member.role}
+                    role={member.bio}
                     alt={member.full_name}
                   />
                 );
@@ -55,6 +59,25 @@ const Team = () => {
           </div>
             <div className="row g-4 text-center mx-2 mx-md-0 mx-lg-1">
               {teamMembersList.map((member, index) => (
+                <TeamCard 
+                  key={member.id || index} 
+                  {...member} 
+                  role= ""
+                  alt={member.full_name}
+                />
+              ))}
+            </div>
+        </div>
+      </div>
+
+      {/* Volunteers */}
+      <div className="container-xxl mt-5">
+        <div className="container">
+          <div className="text-center mx-auto mb-5" style={{ maxWidth: "600px" }}>
+            <h1 className="mb-3">Volunteers Team</h1>
+          </div>
+            <div className="row g-4 text-center mx-2 mx-md-0 mx-lg-1">
+              {volunteersList.map((member, index) => (
                 <TeamCard 
                   key={member.id || index} 
                   {...member} 

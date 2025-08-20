@@ -59,7 +59,7 @@ jobs:
           echo "Converting JSON to JavaScript module..."
           
           # Create the JavaScript file with proper formatting
-          cat > src/data/teamData.js << 'EOF'
+          cat > src/data/teamData.js << EOF
           // Auto-generated from API - Do not edit manually
           // Last updated: $(date -u +"%Y-%m-%d %H:%M:%S UTC")
           

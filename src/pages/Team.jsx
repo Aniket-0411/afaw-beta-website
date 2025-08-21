@@ -39,7 +39,7 @@ const Team = () => {
                   <TeamCard 
                     key={member.id || index} 
                     full_name={member.full_name}
-                    image_url={member.image_url}
+                    image_url= {member.image_url || "/img/placeholders/profile.jpg"} 
                     position={member.position}
                     role={member.bio}
                     alt={member.full_name}
@@ -63,6 +63,7 @@ const Team = () => {
                   key={member.id || index} 
                   {...member} 
                   role= ""
+                  image_url= {member.image_url || "/img/placeholders/profile.jpg"} 
                   alt={member.full_name}
                 />
               ))}
@@ -82,6 +83,7 @@ const Team = () => {
                   key={member.id || index} 
                   {...member} 
                   role= ""
+                  image_url= {member.image_url || "/img/placeholders/profile.jpg"} 
                   alt={member.full_name}
                 />
               ))}

@@ -54,7 +54,7 @@ function Home() {
                 <Carousel
                   slides={[
                     {
-                      img: "img/hero.jpg",
+                      img: "/img/hero.jpg",
                       alt: "Rural Community with Water System",
                       title: "Empowering Africa Through Water",
                       desc:
@@ -63,7 +63,7 @@ function Home() {
                       buttonLink: "/donate",
                     },
                     {
-                      img: "img/about.jpg",
+                      img: "/img/about.jpg",
                       alt: "Women Empowerment in Agriculture",
                       title: "Water is Life. Empowerment is Impact.",
                       desc:

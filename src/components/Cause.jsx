@@ -44,7 +44,6 @@ const Cause = ({ id, delay, name, description, donation_goal, donation_raised, c
           <div className="causes-overlay">
             <button
               className="btn btn-outline-primary"
-              href=""
               onClick={(e) => {
                 e.preventDefault();
                 onCauseClick(id);

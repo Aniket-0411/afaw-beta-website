@@ -1,51 +1,71 @@
-import React from "react";
+import React, { useState, useEffect } from "react";
+import "../styles/Carousel.css";
 
 const Carousel = ({ slides, id = "header-carousel" }) => {
-  console.log('Carousel slides:', slides);
-  console.log('Carousel component rendering...');
+  const [currentSlide, setCurrentSlide] = useState(0);
+  
+  // Auto-advance slides
+  useEffect(() => {
+    if (!slides || slides.length <= 1) return;
+    
+    const interval = setInterval(() => {
+      setCurrentSlide((prev) => (prev + 1) % slides.length);
+    }, 5000);
+    
+    return () => clearInterval(interval);
+  }, [slides]);
+  
+  if (!slides || slides.length === 0) {
+    return (
+      <div style={{ backgroundColor: 'red', minHeight: '100vh', padding: '20px', color: 'white' }}>
+        <h1>ERROR: No slides provided to carousel</h1>
+        <p>Slides data: {JSON.stringify(slides)}</p>
+      </div>
+    );
+  }
+  
+  const nextSlide = () => {
+    setCurrentSlide((prev) => (prev + 1) % slides.length);
+  };
+  
+  const prevSlide = () => {
+    setCurrentSlide((prev) => (prev - 1 + slides.length) % slides.length);
+  };
   
   return (
-    <div className="container-fluid p-0 h-100">
-      <div id={id} className="carousel slide h-100" data-bs-ride="carousel">
-        <div className="carousel-inner h-100">
+    <div className="carousel-container">
+      <div id={id} className="carousel-wrapper">
+        {/* Slide Container */}
+        <div className="carousel-slides">
           {slides.map((slide, idx) => (
             <div
-              className={`carousel-item h-100${idx === 0 ? " active" : ""}`}
               key={idx}
-              style={{ height: "100vh", overflow: "hidden" }}
+              className={`carousel-item ${idx === currentSlide ? 'active' : 'hidden'}`}
             >
               <img
-                className="w-100 h-100 carousel-img"
                 src={slide.img}
                 alt={slide.alt}
-                style={{ 
-                  objectFit: "cover", 
-                  objectPosition: "center",
-                  height: "100vh",
-                  width: "100%"
-                }}
-                onLoad={() => console.log('Image loaded:', slide.img)}
-                onError={() => console.error('Image failed to load:', slide.img)}
+                className="carousel-img"
               />
-              <div className="carousel-caption">
-                <div className="container">
-                  <div className="row justify-content-center">
-                    <div className="col-lg-8 col-md-10 col-sm-12 text-center">
-                      <h1 className="display-4 text-white mb-3 animated slideInDown">
+
+              <div className="carousel-overlay">
+                <div className="carousel-content-wrapper">
+                  <div className="carousel-content-container">
+                    <div className="carousel-content">
+                      <h1 className={`carousel-title ${idx === currentSlide ? 'animate' : ''}`}>
                         {slide.title}
                       </h1>
-                      <p className="fs-5 text-white mb-5 animated slideInDown">
+                      <p className={`carousel-description ${idx === currentSlide ? 'animate' : ''}`}>
                         {slide.desc}
                       </p>
-                      
                       {slide.buttonLink && slide.buttonText && (
                         <a
                           href={slide.buttonLink}
-                          className="btn btn-primary py-2 px-3 animated slideInDown"
+                          className={`carousel-button ${idx === currentSlide ? 'animate' : ''}`}
                         >
                           {slide.buttonText}
-                          <div className="d-inline-flex btn-sm-square bg-white text-primary rounded-circle ms-2">
-                            <i className="fa fa-arrow-right"></i>
+                          <div className="carousel-button-icon">
+                          <i class="fa fa-arrow-right"></i>
                           </div>
                         </a>
                       )}
@@ -56,68 +76,31 @@ const Carousel = ({ slides, id = "header-carousel" }) => {
             </div>
           ))}
         </div>
-        
-        {/* Controls */}
-        <button
-          className="carousel-control-prev"
-          type="button"
-          data-bs-target={`#${id}`}
-          data-bs-slide="prev"
-        >
-          <span className="carousel-control-prev-icon" aria-hidden="true"></span>
-          <span className="visually-hidden">Previous</span>
-        </button>
-        <button
-          className="carousel-control-next"
-          type="button"
-          data-bs-target={`#${id}`}
-          data-bs-slide="next"
-        >
-          <span className="carousel-control-next-icon" aria-hidden="true"></span>
-          <span className="visually-hidden">Next</span>
-        </button>
+
+        {/* Navigation Controls - Only show if more than 1 slide */}
+        {slides.length > 1 && (
+          <>
+            <button
+              type="button"
+              onClick={prevSlide}
+              className="carousel-control carousel-control-prev"
+            >
+              <span className="carousel-control-icon">‹</span>
+              <span className="carousel-control-text">Previous</span>
+            </button>
+            
+            <button
+              type="button"
+              onClick={nextSlide}
+              className="carousel-control carousel-control-next"
+            >
+              <span className="carousel-control-icon">›</span>
+              <span className="carousel-control-text">Next</span>
+            </button>
+          </>
+        )}
+
       </div>
-      
-      {/* Carousel Styles - moved outside the map */}
-      <style jsx>{`
-        .carousel-item {
-          height: 100vh !important;
-          overflow: hidden !important;
-        }
-        .carousel-img {
-          height: 100vh !important;
-          width: 100% !important;
-          object-fit: cover !important;
-          object-position: center !important;
-        }
-        .carousel-caption {
-          position: absolute;
-          top: 0;
-          left: 0;
-          right: 0;
-          bottom: 0;
-          display: flex;
-          align-items: center;
-          justify-content: center;
-          background: rgba(6, 32, 33, 0.8);
-          z-index: 5;
-        }
-        .carousel-control-prev,
-        .carousel-control-next {
-          z-index: 15 !important;
-        }
-        @media (max-width: 767.98px) {
-          .carousel-caption {
-            padding: 0 20px;
-          }
-          .carousel-caption h1 {
-            font-size: 2rem !important;
-          }
-          .carousel-caption p {
-            font-size: 1rem !important;
-          }
-        }
-      `}</style>
     </div>
   );
 };

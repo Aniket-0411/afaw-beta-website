@@ -2,12 +2,11 @@ import React, { useState, useEffect } from "react";
 import { Link } from "react-router-dom";
 import { Helmet } from "react-helmet";
 import Layout from "../components/Layout";
+import CONFIG from "../config";
 import Header from "../components/Header";
 
 const Donate = () => {
-  const PRODUCTION_API_BASE = "https://afaw-beta-api.onrender.com/api";
-  const LOCAL_API_BASE = "http://localhost:5000/api";
-  const API_BASE = PRODUCTION_API_BASE;
+  const API_BASE = CONFIG.apiBaseUrl;
 
   const [projects, setProjects] = useState([]);
   const [selectedProjectId, setSelectedProjectId] = useState("1");
@@ -23,7 +22,7 @@ const Donate = () => {
   useEffect(() => {
     const fetchProjects = async () => {
       try {
-        const res = await fetch(`${API_BASE}/projects`);
+        const res = await fetch(`${API_BASE}/api/projects`);
         const data = await res.json();
         if (Array.isArray(data)) setProjects(data);
       } catch (err) {

@@ -19,44 +19,6 @@ Africa Access Water builds solar-powered water infrastructure to improve food se
 - **Build Tool**: Create React App
 - **Deployment**: Vercel
 
-## 📁 Project Structure
-
-```
-afaw-beta-website/
-├── public/                     # Static assets
-│   ├── css/                   # Stylesheets
-│   ├── img/                   # Images and media files
-│   │   ├── logos/            # Brand logos
-│   │   ├── partners/         # Partner logos
-│   │   ├── payments/         # Payment method icons
-│   │   └── projects/         # Project images
-│   ├── js/                   # JavaScript libraries
-│   ├── lib/                  # Third-party libraries
-│   └── docs/                 # PDF documents
-├── src/                      # Source code
-│   ├── components/           # Reusable React components
-│   │   ├── About.jsx
-│   │   ├── Carousel.jsx
-│   │   ├── Footer.jsx
-│   │   ├── Header.jsx
-│   │   ├── Layout.jsx
-│   │   ├── Navbar.jsx
-│   │   └── ...
-│   ├── pages/               # Page components
-│   │   ├── Home.jsx
-│   │   ├── Donate.jsx
-│   │   ├── Contact.jsx
-│   │   ├── Team.jsx
-│   │   └── Posts.jsx
-│   ├── data/               # Static data files
-│   │   ├── teamData.js
-│   │   ├── causesData.js
-│   │   └── postsData.js
-│   ├── styles/             # Component-specific styles
-│   └── App.js              # Main application component
-└── package.json            # Dependencies and scripts
-```
-
 ## 🏃‍♂️ Getting Started
 
 ### Prerequisites
@@ -85,9 +47,34 @@ Make sure you have the following installed on your system:
 
    ```bash
    yarn install
+
+3. **Environment configuration** 
+
+The website (Create React App) reads only the following environment variable:
+
+```
+REACT_APP_API_BASE_URL
+```
+
+Examples:
+- Development: `REACT_APP_API_BASE_URL=http://localhost:5000/api`
+- Production: `REACT_APP_API_BASE_URL=https://afaw-beta-api.onrender.com/api`
+
+You can place these in:
+- `.env.development` for `npm start`
+- `.env.production` for `npm run build`
+
+The value is consumed via `src/config.js` and used by API calls in the app.
+
+Note: There is currently no frontend usage of a Stripe publishable key, so `REACT_APP_STRIPE_PUBLISHABLE_KEY` is not required.
+
+### Build & run
+
+- Frontend: `npm install && npm start` (development)
+- Frontend build: `npm run build` (production)
    ```
 
-3. **Start the development server**
+4. **Start the development server**
 
    ```bash
    npm start
@@ -99,7 +86,7 @@ Make sure you have the following installed on your system:
    yarn start
    ```
 
-4. **Open your browser**
+5. **Open your browser**
 
    The application will automatically open at [http://localhost:3000](http://localhost:3000)
 
